@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello! Welcome to <span class="my-name">Willie</span>'s World!</h1>
+    <div class="container-lg justify-content-center">
+      <h2>Introduce <span class="my-name">Willie</span></h2>
+      <section
+        class="justify-content-around d-flex flex-column flex-lg-row cards"
+        id="self-info"
+      >
+        <img id="info-pic" src="./images/cute_calculator.jpg" />
+        <table class="table-intro">
+          <tr>
+            <td>NAME:</td>
+            <td>
+              <p id="name-intro">William (Willie / Wing etc.)</p>
+              <!-- <p>(Who is he in dark mode?)</p> -->
+            </td>
+          </tr>
+          <tr>
+            <td>FORMER JOB:</td>
+            <td>
+              <p>Math Tutor (Pri & Sec level)</p>
+            </td>
+          </tr>
+          <tr>
+            <td>LIVE IN:</td>
+            <td>
+              <p>Tuen Mun</p>
+            </td>
+          </tr>
+          <tr>
+            <td>HOROSCOPE:</td>
+            <td>Aries</td>
+          </tr>
+        </table>
+      </section>
+
+      <h2>Projects</h2>
+      <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="card carousel-item active">
+            <img src="./images/gameoflife.png" class="d-block w-100" alt="...">
+            <div class="card-img-overlay text-center d-flex justify-content-center">
+              <div class="table-inscribed">
+                <table class="table-caro">
+                  <tr>
+                    <td><h5 class="card-title">GAME OF LIFE</h5></td>
+                  </tr>
+                  <tr>
+                    <td><a href="./gameoflife.html" class="btn">come and play</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/coming_soon.jpg" class="d-block w-100" alt="...">
+            <div class="card-img-overlay text-center d-flex justify-content-center">
+              <div class="table-inscribed">
+                <table class="table-caro">
+                  <tr>
+                    <td><h5 class="card-title">COMING SOON</h5></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#" class="btn">coming soon</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/coming_soon.jpg" class="d-block w-100" alt="...">
+            <div class="card-img-overlay text-center d-flex justify-content-center">
+              <div class="table-inscribed">
+                <table class="table-caro">
+                  <tr>
+                    <td><h5 class="card-title">COMING SOON 2</h5></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#" class="btn">coming soon 2</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+
+      <h2>Favourites</h2>
+      <!-- Favourites: HKVtuber -->
+      <section
+        class="my-favourties justify-content-between d-flex flex-column flex-lg-row"
+      >
+      <div class="fav-cards cards col">
+        <div class="img-holder">
+          <img src="./images/Link_reality_crop.jpg" />
+        </div>
+
+        <nav class="navbar" aria-label="hkvtuber">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">HKVtuber</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hkvtuber" aria-controls="hkvtuber" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="navbar-collapse collapse" id="hkvtuber">
+              <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item d-flex">
+                  <img src="./images/tsukishima-cross-portrait-66.jpg" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://youtube.com/@tksmcross">月島クロス(Tsukishima Cross)</a>
+                </li>
+                <li class="nav-item d-flex">
+                  <img src="./images/ryuou-tiamat-portrait-66.jpg" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://www.youtube.com/@ryuoutiamat">龍桜ティアマト(Ryuou Tiamat)</a>
+                </li>
+                <li class="nav-item d-flex">
+                  <img src="./images/izayoai-aotuki-portrait-66.jpg" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://youtube.com/@aotuki_channel">十六夜蒼月(Izayoai Aotuki)</a>
+                </li>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <!-- Favourites: Manga -->
+      <div class="fav-cards cards col">
+        <div class="img-holder">
+          <img src="./images/nakayoshi.jpg" />
+        </div>
+        <nav class="navbar" aria-label="manga">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Manga / Anime</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#manga" aria-controls="manga" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="navbar-collapse collapse" id="manga">
+              <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item d-flex">
+                  <img src="./images/Hinagiku.jpg" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://zh.wikipedia.org/wiki/%E6%97%8B%E9%A2%A8%E7%AE%A1%E5%AE%B6">Hayate No Gotoku</a>
+                </li>
+                <li class="nav-item d-flex">
+                  <img src="./images/Rimuru.webp" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://zh.wikipedia.org/wiki/%E9%97%9C%E6%96%BC%E6%88%91%E8%BD%89%E7%94%9F%E8%AE%8A%E6%88%90%E5%8F%B2%E8%90%8A%E5%A7%86%E9%80%99%E6%AA%94%E4%BA%8B">Tensura</a>
+                </li>
+                <li class="nav-item d-flex">
+                  <img src="./images/maoyu.jpg" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://en.wikipedia.org/wiki/Maoyu">Maoyu: Archenemy and Hero</a>
+                </li>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </section>
+
+
+      <!-- Favourites: Football -->
+      <section
+        class="my-favourties justify-content-between d-flex flex-column flex-lg-row"
+      >
+      <div class="fav-cards cards col">
+        <div class="img-holder">
+          <img src="./images/soccer-ball-goal.webp" />
+        </div>
+
+        <nav class="navbar" aria-label="football">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Football</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#football" aria-controls="football" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="navbar-collapse collapse" id="football">
+              <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item">
+                  <img src="./images/Liverpool_FC.png" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://en.wikipedia.org/wiki/Liverpool_F.C.">Liverpool FC</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <!-- Favourites: Math and Puzzle -->
+      <div class="fav-cards cards col">
+        <div class="img-holder">
+          <img src="./images/1178_MCEscher_2.jpg" />
+        </div>
+        <nav class="navbar" aria-label="math">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Math and Puzzle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#math" aria-controls="math" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="navbar-collapse collapse" id="math">
+              <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item d-flex">
+                  <img src="./images/nonogram.jpg" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://www.nonograms.org/">Nonogram</a>
+                </li>
+                <li class="nav-item d-flex">
+                  <img src="./images/ctklogo.png" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://www.cut-the-knot.org/">Cut the knots</a>
+                </li>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </section>
+
+      <!-- <h2>Hobbies</h2>
+      drawing
+      <section
+        id="hobbies"
+        class="justify-content-between d-flex flex-column flex-md-row"
+      >
+      <div class="fav-cards cards col">
+        <div class="img-holder">
+          <img src="./images/soccer-ball-goal.webp" />
+        </div>
+
+        <nav class="navbar" aria-label="Drawing">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Drawing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#football" aria-controls="football" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="navbar-collapse collapse" id="football">
+              <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item">
+                  <img src="./images/Liverpool_FC.png" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://en.wikipedia.org/wiki/Liverpool_F.C.">Liverpool FC</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      Favourites: Embroidery
+      <div class="fav-cards cards col">
+        <div class="img-holder">
+          <img src="./images/1178_MCEscher_2.jpg" />
+        </div>
+        <nav class="navbar" aria-label="embroidery">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Embroidery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#embroidery" aria-controls="embroidery" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="navbar-collapse collapse" id="embroidery">
+              <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item d-flex">
+                  <img src="./images/nonogram.jpg" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://www.nonograms.org/">Nonogram</a>
+                </li>
+                <li class="nav-item d-flex">
+                  <img src="./images/ctklogo.png" class="icon"/>
+                  <a class="nav-link" aria-current="page" href="https://www.cut-the-knot.org/">Cut the knots</a>
+                </li>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </section>
+    </div>
+  </body>
+</html> -->

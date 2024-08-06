@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="./gameoflife.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./p5.min.js"></script>
+    <title>Game of life</title>
+  </head>
+  <body>
+    <!-- Sliders -->
+    <h1>GAME OF LIFE</h1>
+
+    <h2>Style:</h2>
+    <div class="d-flex justify-content-around flex-column flex-md-row">
+      <div>
+        <label for="tone">Color Tone </label>
+        <select name="tone" id="tone">
+          <option value="sky">sky</option>
+          <option value="grass">grass</option>
+          <option value="pinky">pinky</option>
+        </select>
+      </div>
+    </div>
+
+    <h2>Settings:</h2>
+    <div class="slider">
+      <label for="runs-per-second">Runs Per Second</label>
+      <input
+        type="range"
+        id="runs-per-second"
+        name="runs-per-second"
+        min="2"
+        max="50"
+        value="20"
+      />
+      <span id="show-runs-per-second-value"></span>
+    </div>
+    <div class="d-flex justify-content-around flex-column flex-md-row">
+      <div>
+        <label for="survival-min">Survival min</label>
+        <input
+          type="number"
+          id="survival-min"
+          name="survival-min"
+          value="2"
+          min="1"
+          max="3"
+        />
+      </div>
+      <div>
+        <label for="survival-max">Survival MAX</label>
+        <input
+          type="number"
+          id="survival-max"
+          name="survival-max"
+          value="3"
+          min="2"
+          max="8"
+        />
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around flex-column flex-md-row">
+      <div>
+        <label for="reproduction-min">Reproduction min</label>
+        <input
+          type="number"
+          id="reproduction-min"
+          name="reproduction-min"
+          value="3"
+          min="1"
+          max="3"
+        />
+      </div>
+      <div>
+        <label for="reproduction-max">Reproduction MAX</label>
+        <input
+          type="number"
+          id="reproduction-max"
+          name="reproduction-max"
+          value="3"
+          min="3"
+          max="8"
+        />
+      </div>
+    </div>
+
+    <h2>Controls</h2>
+    <div class="d-flex justify-content-around flex-column flex-md-row">
+      <button id="start-pause">Start/Pause (Press Space)</button>
+      <button id="reset-game">Reset (Press R)</button>
+    </div>
+    <div class="d-flex justify-content-around flex-column flex-md-row">
+      <button id="draw-erase">Add cell / Erase cell</button>
+      <button id="stepwise">Stepwise-ly Running the Game</button>
+    </div>
+
+    <div class="d-flex justify-content-around flex-column flex-md-row">
+      <div>
+        <label for="candidate">Candidate </label>
+        <select name="candidate" id="candidate">
+          <option value="1">Candidate 1</option>
+          <option value="2">Candidate 2</option>
+        </select>
+      </div>
+    </div>
+    <div class="d-flex justify-content-around flex-column flex-md-row">
+      <div>
+Press P for keyboard Control, press enter for placing cell
+      </div>
+    </div>
+
+    <h2>Spawns</h2>
+    <div class="d-flex justify-content-around flex-column flex-md-row">
+      <div>
+        <button id="add-pattern">Add pattern</button>
+        <label for="pattern">Pattern </label>
+        <select name="pattern" id="pattern">
+          <option value="glider">Glider</option>
+          <option value="angelPredecessor">Angel predecessor</option>
+        </select>
+      </div>
+      <div>
+        <button id="random-spawn">Randon Spawn</button>
+        <label for="random-spawn-number"></label>
+        <input
+          type="number"
+          id="random-spawn-number"
+          name="random-spawn-number"
+          value="100"
+          min="3"
+          max="500"
+        />
+      </div>
+    </div>
+
+    <!-- Game Canvas -->
+    <br />
+    <div id="canvas"></div>
+
+    <script src="./gameoflife.js"></script>
+
+
+  </body>
+</html>
