@@ -11,6 +11,12 @@ let nextBoardB;
 let previousBoard;
 let pace;
 
+let species = [{ color: "red" }, { color: "blue" }]
+
+// currentBoard[x][y] = 0/1/2/3/4
+// currentBoard[x][y] = {specie:"A" ,age:0}
+
+
 const colorChart = {
   pinky: {
     boxColor: [
@@ -49,7 +55,7 @@ const colorChart = {
 
 let tone = document.querySelector("#tone");
 document.body.style.background = colorChart[tone.value]["bgColor"];
-tone.addEventListener("change", ()=>{
+tone.addEventListener("change", () => {
   document.body.style.background = colorChart[tone.value]["bgColor"];
   console.log(tone.value);
   paintboard();
